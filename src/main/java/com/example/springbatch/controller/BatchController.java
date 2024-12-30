@@ -39,7 +39,6 @@ public class BatchController {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    @Transactional(propagation = Propagation.REQUIRED)
     @GetMapping("/test")
     public ResponseEntity test() throws JobInstanceAlreadyCompleteException, JobExecutionAlreadyRunningException, JobParametersInvalidException, JobRestartException {
         JobParameters jobParameters = new JobParametersBuilder()

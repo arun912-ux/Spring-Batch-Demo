@@ -110,7 +110,7 @@ public class BatchConfiguration {
 
     public Step step2(JobRepository jobRepository, PlatformTransactionManager transactionManager) throws BindException {
         return new StepBuilder("step2", jobRepository)
-                .<String[], Person>chunk(250, transactionManager)
+                .<String[], Person>chunk(50, transactionManager)
                 .reader(itemReader())
                 .processor(itemProcessor())
                 .writer(jdbcBatchItemWriter())

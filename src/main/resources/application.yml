@@ -21,7 +21,7 @@ spring:
     show-sql: true
     generate-ddl: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
   jdbc:
     template:
       query-timeout: 15s
