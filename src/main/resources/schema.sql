@@ -1,0 +1,1 @@
+CREATE SCHEMA spring_batch_example;
