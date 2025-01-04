@@ -15,7 +15,7 @@ import java.util.UUID;
 @AllArgsConstructor
 
 @Entity
-@Table(name = "person", schema = "spring_batch_example")
+@Table(name = "PERSON", schema = "spring_batch_example")
 public class Person {
 
     @Id

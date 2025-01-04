@@ -26,3 +26,18 @@ spring:
     template:
       query-timeout: 15s
 
+
+
+
+  mail:
+    protocol: smtp
+    host: smtp.mailersend.net
+    port: 587
+    username: MS_eHOJAO@trial-zr6ke4nkv3v4on12.mlsender.net
+    password: RQDxjh2c2nKLfYUZ
+    default-encoding: UTF-8
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+
+

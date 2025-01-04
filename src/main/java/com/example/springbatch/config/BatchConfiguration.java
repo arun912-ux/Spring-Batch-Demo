@@ -91,7 +91,7 @@ public class BatchConfiguration {
                         fieldSet.readString("gender"),
                         fieldSet.readString("dateTime")
                 })
-//                .fieldSetMapper(fieldSet -> fieldSet.readString("uuid"))
+//                .fieldSetMapper(fieldSet -> fieldSet.getNames())
 //                .fieldSetMapper(fieldSetMapper)
                 .build();
         return build;
